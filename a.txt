@@ -1,4 +1,0 @@
-in Master branch
-in develop branch
-in feature/checkout branch
-
