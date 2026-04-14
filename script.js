@@ -564,8 +564,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Telegram Bot Configuration
   const TELEGRAM_CONFIG = {
-    BOT_TOKEN: "8188463035:AAEQtz13139Qsnmb_Gzgb18NU5m2u9VibOM", // Token bot của bạn
-    CHAT_ID: "1898063540", // Chat ID của bạn
+    BOT_TOKEN: "8703732835:AAHDqPoBKkDrUOfwI2krB3uMffnjQhVKgig", // Token bot của bạn
+    CHAT_ID: "5611281520", // Chat ID của bạn
     API_URL: "https://api.telegram.org/bot",
   };
 
