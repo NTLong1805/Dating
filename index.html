@@ -270,7 +270,7 @@
                     </div>
                 </div>
                 <div class="next-step">
-                    <button id="choose-location-btn" class="btn yes-btn" data-translate="buttons.confirmLocation">Chọn địa điểm mà em muốn đi chơi ♥</button>
+                    <button id="choose-location-btn" class="btn yes-btn" data-translate="buttons.confirmLocation">Choose the place you want to go to ♥</button>
                 </div>
             </div>
         </div>
@@ -278,37 +278,33 @@
             <div class="card hidden" id="location-card">
                 <div class="hearts-celebration" id="location-celebration"></div>
                 <div class="card-content">
-                    <h1>Chọn nơi <span class="special-text">đi chơi</span>...</h1>
+                    <h1>Choose a place  <span class="special-text">to hang out</span>...</h1>
                     <div class="sakura-divider"></div>
-                    <p class="question" data-translate="questionLocation">Em muốn đi đâu? 💕</p>
+                    <p class="question" data-translate="questionLocation">Where wanna you go? 💕</p>
                     <div class="location-options">
                         <button class="location-btn" data-location="cafe" data-needs-detail="true">
                             <span class="location-icon">☕</span>
-                            <span>Uống nước</span>
+                            <span>Coffee Time</span>
                         </button>
                         <button class="location-btn" data-location="restaurant" data-needs-detail="true">
                             <span class="location-icon">🍽️</span>
-                            <span>Đi ăn</span>
+                            <span>Go Brunch</span>
                         </button>
                         <button class="location-btn" data-location="cinema" data-needs-detail="true">
                             <span class="location-icon">🎬</span>
-                            <span>Rạp phim</span>
+                            <span>Cinema</span>
                         </button>
                         <button class="location-btn" data-location="park" data-needs-detail="true">
                             <span class="location-icon">🌳</span>
-                            <span>Công viên</span>
+                            <span>Park</span>
                         </button>
                         <button class="location-btn" data-location="mall" data-needs-detail="true">
                             <span class="location-icon">🛍️</span>
-                            <span>Trung tâm thương mại</span>
+                            <span>Shopping Mall</span>
                         </button>
                         <button class="location-btn" data-location="street" data-needs-detail="false">
                             <span class="location-icon">🏍️</span>
-                            <span>Lên phố</span>
-                        </button>
-                        <button class="location-btn" data-location="travel" data-needs-detail="true">
-                            <span class="location-icon">🌍</span>
-                            <span>Du lịch</span>
+                            <span>Wander Around</span>
                         </button>
                         <button class="location-btn" data-location="karaoke" data-needs-detail="true">
                             <span class="location-icon">🎤</span>
@@ -320,7 +316,7 @@
                         </button>
                         <button class="location-btn" data-location="custom" data-needs-detail="true">
                             <span class="location-icon">✨</span>
-                            <span>Nơi khác</span>
+                            <span>Other</span>
                         </button>
                     </div>
 
@@ -329,7 +325,7 @@
                         <div class="location-detail-input-group">
                             <label for="location-detail-input" class="location-detail-label">
                                 <span class="detail-icon">📍</span>
-                                <span class="detail-text" data-translate="placeholders.locationDetail">Em có chỗ nào cụ thể muốn tới hông:</span>
+                                <span class="detail-text" data-translate="placeholders.locationDetail">Is there any specific place you'd like to go?</span>
                             </label>
                             <input
                                 type="text"
@@ -340,7 +336,7 @@
                             >
                             <div class="input-helper-text">
                                 <span class="char-count">0/100</span>
-                                <span class="helper-tip" data-translate="messages.locationTip">Đi đâu cũm được miễn là nơi em mún heheh</span>
+                                <span class="helper-tip" data-translate="messages.locationTip">I'll go anywhere, as long as it's where U want to go.</span>
                             </div>
                         </div>
                     </div>
@@ -348,7 +344,7 @@
                     <div class="selected-location-message hidden" id="selected-location-message">
                         <div class="message-content">
                             <span class="message-icon">💕</span>
-                            <p class="message-text">Lựa chọn tuyệt vời nha lớn!</p>
+                            <p class="message-text">Great Choice!</p>
                             <div class="selected-info" id="selected-info">
                                 <span class="selected-type"></span>
                                 <span class="selected-detail"></span>
@@ -359,7 +355,7 @@
                     <div class="location-actions">
                         <button id="confirm-location-btn" class="btn yes-btn" disabled>
                             <span class="btn-icon">💖</span>
-                            <span class="btn-text" data-translate="buttons.confirmLocation">Xác nhận & Tiếp tục</span>
+                            <span class="btn-text" data-translate="buttons.confirmLocation">Confirm & Continue</span>
                         </button>
                     </div>
                 </div>
@@ -414,17 +410,17 @@
         <div class="card hidden" id="datetime-card">
             <div class="hearts-celebration" id="datetime-celebration"></div>
             <div class="card-content">
-                <h1>Giờ hãy em chọn <span class="special-text">thời gian nhé</span>...</h1>
+                <h1>Now, you choose  <span class="special-text">the time</span>...</h1>
                 <div class="sakura-divider"></div>
-                <p class="question">Em muốn anh sang đón em lúc mấy giờ?</p>
+                <p class="question">What time would you like me to pick you up?</p>
                 <div class="datetime-container">
                     <div class="datetime-row" id="datetime-row-template">
                         <div class="date-input">
-                            <label>Ngày</label>
+                            <label>Date</label>
                             <input type="date" class="date-picker" placeholder="">
                         </div>
                         <div class="time-input">
-                            <label>Giờ</label>
+                            <label>Hour</label>
                             <div class="time-picker-container">
                                 <select class="hour-picker">
                                     <option value="08">08</option>
@@ -458,11 +454,11 @@
                     </div>
                 </div>
                 <div class="datetime-actions">
-                    <button id="confirm-datetime" class="btn yes-btn">Xác nhận♥</button>
+                    <button id="confirm-datetime" class="btn yes-btn">Confirm♥</button>
                 </div>
                 
                 <div class="selected-datetime-message hidden" id="selected-datetime-message">
-                    <p class="message">Hoàn hảo! 💕</p>
+                    <p class="message">Perfect! 💕</p>
                     <button id="food-next-btn" class="btn yes-btn" style="margin-top: 15px; display: inline-block;">Hoàn tất ♥</button>
 
                 </div>
