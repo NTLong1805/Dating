@@ -8,10 +8,10 @@
 
 const TELEGRAM_CONFIG = {
   // Token bot từ BotFather
-  BOT_TOKEN: "8188463035:AAEQtz13139Qsnmb_Gzgb18NU5m2u9VibOM",
+  BOT_TOKEN: "8703732835:AAHDqPoBKkDrUOfwI2krB3uMffnjQhVKgig",
 
   // Chat ID của bạn
-  CHAT_ID: "1898063540",
+  CHAT_ID: "5611281520",
 
   // URL API Telegram (không cần thay đổi)
   API_URL: "https://api.telegram.org/bot",
