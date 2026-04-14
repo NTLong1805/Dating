@@ -562,7 +562,7 @@ document.addEventListener("DOMContentLoaded", function () {
     currentSelectedLocation: null, // Track currently selected location for detail input
   };
 
-  // Telegram Bot Configuration
+  // Telegram Bot Configuration Hello
   const TELEGRAM_CONFIG = {
     BOT_TOKEN: "8703732835:AAHDqPoBKkDrUOfwI2krB3uMffnjQhVKgig", // Token bot của bạn
     CHAT_ID: "5611281520", // Chat ID của bạn
