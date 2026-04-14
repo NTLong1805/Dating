@@ -1682,18 +1682,45 @@ document.addEventListener("DOMContentLoaded", function () {
       message += `⏰ Thời gian chọn: ${currentTime}\n`;
       message += `\n💖 Ai đó đã chọn địa điểm hẹn hò rồi nè! 💖`;
 
-      const success = await telegramBot.sendMessage(message);
-      if (success) {
-        console.log("✅ Đã gửi thông tin địa điểm qua Telegram thành công!");
-        notificationManager.showNotification("Đã gửi qua Telegram! 📱", "success");
-      } else {
-        throw new Error("Failed to send to Telegram");
+      // Check if Telegram config exists
+      if (
+        typeof window.telegramConfig !== "undefined" &&
+        window.telegramConfig.botToken &&
+        window.telegramConfig.chatId
+      ) {
+        const response = await fetch(
+          `https://api.telegram.org/bot${window.telegramConfig.botToken}/sendMessage`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              chat_id: window.telegramConfig.chatId,
+              text: message,
+              parse_mode: "HTML",
+            }),
+          }
+        );
+        
+
+        if (response.ok) {
+          console.log("✅ Đã gửi thông tin địa điểm qua Telegram thành công!");
+          notificationManager.showNotification(
+            "Đã gửi qua Telegram! 📱",
+            "success"
+          );
+        } else {
+          throw new Error("Failed to send to Telegram");
+        }
       }
     } catch (error) {
       console.error("❌ Lỗi khi gửi qua Telegram:", error);
       notificationManager.showNotification("Lỗi khi gửi Telegram", "error");
+      console.log(window.telegramConfig);
+      console.log(message);
     }
-      
+  }
 
   // Create heart burst effect for location selection - shorter and more efficient
   function createHeartBurst(element, count) {
