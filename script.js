@@ -4,19 +4,19 @@ const languageManager = {
 
   translations: {
     vi: {
-      title: "Xin chào",
+      title: "Hi",
       subtitle: "Em muốn đi chơi với anh chứ?",
-      questionLocation: "Em muốn đi đâu?",
+      questionLocation: "Where wanna you go?",
       questionFood: "Em muốn ăn gì?",
       questionDrink: "Em muốn uống gì?",
       questionTime: "Em rảnh khi nào?",
-      successTitle: "Cảm ơn vì em đã đồng ý",
-      successMessage: "Anh rất mong chờ buổi gặp sắp tới!",
-      successSubtitle: "Anh hứa sẽ làm cho nó thật đặc biệt, hứa đấy!",
+      successTitle: "Your presence is an honor for me.",
+      successMessage: "I'm really looking forward to the dating!",
+      successSubtitle: "Hopefully, our first day will be unforgettable!",
       buttons: {
-        yes: "Cóoooo ♥",
-        no: "Hong ☹",
-        confirmLocation: "Chọn địa điểm mà em muốn đi chơi ♥",
+        yes: "Yes ♥",
+        no: "Nahh ☹",
+        confirmLocation: "Choose the place you want to go to ♥",
         confirmTime: "Xác nhận thời gian",
         chooseLocation: "Chọn địa điểm",
         addTime: "Thêm thời gian",
@@ -26,20 +26,20 @@ const languageManager = {
         confirm: "Xác nhận",
       },
       locations: {
-        cafe: "Uống nước",
-        restaurant: "Đi ăn",
-        cinema: "Rạp phim",
-        park: "Công viên",
-        mall: "Trung tâm thương mại",
+        cafe: "Coffee",
+        restaurant: "Restaurant",
+        cinema: "Cinema",
+        park: "Park",
+        mall: "Shopping Mall",
         beach: "Bãi biển",
-        museum: "Bảo tàng",
-        street: "Lên phố",
+        museum: "Museum",
+        street: "Street",
         hotel: "Khách sạn",
         travel: "Du lịch",
         karaoke: "Karaoke",
-        home: "Ở nhà",
+        home: "Home",
         custom: "Nơi khác",
-        other: "Địa điểm khác",
+        other: "Other",
       },
       foods: {
         vietnamese: "🍜 Món Việt",
@@ -63,7 +63,7 @@ const languageManager = {
       },
       placeholders: {
         locationInput: "...",
-        locationDetail: "Em còn có mong muốn gì nữa honggg",
+        locationDetail: "Is there any specific place you'd like to go?",
         customFood: "Nhập món ăn em muốn...",
         customDrink: "Nhập đồ uống em muốn...",
         name: "Tên của em",
@@ -96,7 +96,7 @@ const languageManager = {
         fillAllFields: "Vui lòng điền đầy đủ thông tin",
         invalidPhone: "Số điện thoại không hợp lệ",
         invalidEmail: "Email không hợp lệ",
-        locationTip: "Đi đâu cũm được miễn là nơi em mún heheh",
+        locationTip: "I'll go anywhere, as long as it's where U want to go.",
       },
       notifications: {
         success: "Thành công!",
@@ -1702,7 +1702,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }),
           }
         );
-        
 
         if (response.ok) {
           console.log("✅ Đã gửi thông tin địa điểm qua Telegram thành công!");
